@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+    background: url('../imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    position: relative;
+    height: 100vh;    
+   
+}
+
+section#telefone {
+    position: absolute;/*permite configurar duas propriedades: left e top, vide abaixo*/
+
+    /*as 2 linhas abaixo faz o objeto ficar no centro do container, considerando o ponto superior esquerdo*/
+    top: 50%;
+    left: 50%;
+    /*a linha abaixo faz o ajuste para o objeto (conteúdo) fique centro com centro em relação ao main*/
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    
+    background: url('/imagens/frame-iphone.png') no-repeat;
+}
